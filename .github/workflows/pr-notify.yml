@@ -1,0 +1,30 @@
+name: PR Slack Notification
+
+on:
+  pull_request:
+    branches: [main]
+    types: [opened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Post to Slack
+        uses: slackapi/slack-github-action@v2.1.0
+        with:
+          webhook: ${{ secrets.SLACK_WEBHOOK_URL }}
+          webhook-type: incoming-webhook
+          payload: |
+            {
+              "text": "New PR into main",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*New Pull Request into main*\n*<${{ github.event.pull_request.html_url }}|${{ github.event.pull_request.title }}>*\nOpened by `${{ github.actor }}` from branch `${{ github.head_ref }}`"
+                  }
+                }
+              ]
+            }
