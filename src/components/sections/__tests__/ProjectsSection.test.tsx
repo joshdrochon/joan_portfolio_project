@@ -19,9 +19,10 @@ describe("ProjectsSection", () => {
     expect(screen.getAllByText("Buffalo Wild Wings Mobile App Feature").length).toBeGreaterThan(0);
   });
 
-  it("renders placeholder descriptions", () => {
+  it("renders project descriptions", () => {
     render(<ProjectsSection />);
-    const placeholders = screen.getAllByText(/placeholder — case study/i);
-    expect(placeholders).toHaveLength(2);
+    expect(screen.getAllByText(/partnered with a family-owned small business/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/collaborated closely with a software engineer/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/orchestrated a game-day marketing initiative/i).length).toBeGreaterThan(0);
   });
 });

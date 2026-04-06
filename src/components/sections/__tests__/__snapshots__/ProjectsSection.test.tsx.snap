@@ -51,7 +51,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-mono text-gray-400 mb-4"
           >
-            Partnered with a family-owned small business to modernize their digital presence —...
+            Partnered with a family-owned small business to modernize their digital presence — crafting a fresh,...
           </p>
           <div
             class="flex justify-start"
@@ -103,9 +103,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               Lawnboy Website Revamp
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Partnered with a family-owned small business to modernize their digital presence — crafting a fresh, welcoming site designed to reflect their brand and drive new business.
             </p>
           </div>
         </div>
@@ -147,7 +147,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-mono text-gray-400 mb-4"
           >
-            [ Placeholder — case study overview coming soon ]
+            Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing,...
           </p>
           <div
             class="flex justify-start"
@@ -199,9 +199,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               Customer UX/UI Portfolio Wesbite
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.
             </p>
           </div>
         </div>
@@ -243,7 +243,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-mono text-gray-400 mb-4"
           >
-            [ Placeholder — case study overview coming soon ]
+            Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone...
           </p>
           <div
             class="flex justify-start"
@@ -295,9 +295,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               Buffalo Wild Wings Mobile App Feature
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high-fidelity prototypes that translated real fan behaviors into a compelling, intuitive in-app experience.
             </p>
           </div>
         </div>
