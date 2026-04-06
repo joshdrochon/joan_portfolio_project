@@ -1,0 +1,16 @@
+.photo {
+  filter: saturate(0.05) brightness(1.2) contrast(0.25) sepia(0.45);
+  transition: filter 3s ease;
+}
+
+.card:hover .photo {
+  filter: saturate(1) brightness(1) contrast(1) sepia(0);
+}
+
+.card {
+  transition: transform 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}

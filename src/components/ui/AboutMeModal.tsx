@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
+import Image from "next/image";
+import { about } from "@/data/about";
 
 interface AboutMeModalProps {
   isOpen: boolean;
@@ -16,62 +18,68 @@ export default function AboutMeModal({ isOpen, onClose }: AboutMeModalProps) {
     return () => document.removeEventListener("keydown", handleKey);
   }, [isOpen, onClose]);
 
-  if (!isOpen) return null;
 
   return (
+    <>
+    {isOpen && <style>{`body { overflow: hidden; }`}</style>}
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-8"
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8 ${isOpen ? "" : "hidden"}`}
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="bg-white max-w-2xl w-full p-10 relative shadow-2xl"
+        className="bg-[#f2f2f2] rounded-[6px] w-full max-w-[718px] overflow-y-auto relative"
+        style={{ maxHeight: "calc(100vh - 96px)" }}
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+          className="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
           aria-label="Close"
         >
           ✕
         </button>
 
-        <h2 className="font-handwritten text-[64px] tracking-[6px] text-black leading-none mb-8">
-          About Me
-        </h2>
-
-        <div className="space-y-5">
-          <div className="bg-gray-50 border border-dashed border-gray-200 p-5">
-            <p className="font-mono text-sm text-gray-400">
-              [ Placeholder — Bio content coming soon ]
-            </p>
-            <p className="font-mono text-xs text-gray-300 mt-2">
-              This section will introduce Joan: her background, how she got into UX, and what drives her work.
-            </p>
+        {/* Top placeholder image */}
+        <div className="pt-[47px] flex justify-center">
+          <div className="relative w-[584px] h-[328px] rounded-[4px] overflow-hidden">
+            <Image src="/joanaboutme.jpeg" alt="About Joan" fill priority className="object-cover" style={{ objectPosition: 'center calc(20% - 25px)' }} />
           </div>
+        </div>
 
-          <div className="bg-gray-50 border border-dashed border-gray-200 p-5">
-            <p className="font-mono text-sm text-gray-400">
-              [ Placeholder — Design philosophy ]
-            </p>
-            <p className="font-mono text-xs text-gray-300 mt-2">
-              Joan&apos;s approach to design — research-first, user-centered, and iterative.
-            </p>
-          </div>
+        {/* Content */}
+        <div className="px-[56px] pt-6 pb-6">
+          {/* Greeting */}
+          <p className="font-mono text-[16px] tracking-[4px] text-black text-center">
+            {about.greeting}
+          </p>
 
-          <div className="grid grid-cols-3 gap-4">
-            {["UX Research", "Interaction Design", "Prototyping"].map((skill) => (
-              <div
-                key={skill}
-                className="bg-gray-50 border border-dashed border-gray-200 p-4 text-center"
-              >
-                <p className="font-mono text-xs text-gray-400">[ {skill} ]</p>
-              </div>
-            ))}
-          </div>
+          {/* Subtitle */}
+          <p className="font-mono font-semibold text-[16px] tracking-[3.2px] text-black text-center mt-4">
+            {about.subtitle}
+          </p>
+
+          {/* Intro */}
+          <p className="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-5 leading-[1.4]">
+            {about.intro}
+          </p>
+
+          {/* Sections */}
+          {about.sections.map((section) => (
+            <div key={section.title} className="mt-4">
+              <p className="font-mono font-bold text-[16px] tracking-[3.2px] text-black">
+                {section.emoji} <span className="font-bold">{section.title}</span>
+              </p>
+              <p className="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-1 leading-[1.4]">
+                {section.body}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
+    </>
   );
 }

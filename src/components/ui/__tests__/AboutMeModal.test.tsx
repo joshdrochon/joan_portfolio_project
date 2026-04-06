@@ -11,7 +11,18 @@ describe("AboutMeModal", () => {
   it("renders when open", () => {
     render(<AboutMeModal isOpen={true} onClose={() => {}} />);
     expect(screen.getByRole("dialog")).toBeInTheDocument();
-    expect(screen.getByText(/about me/i)).toBeInTheDocument();
+  });
+
+  it("renders greeting and subtitle", () => {
+    render(<AboutMeModal isOpen={true} onClose={() => {}} />);
+    expect(screen.getByText(/hi, i'm joan miguel/i)).toBeInTheDocument();
+    expect(screen.getByText(/ux designer \| asu alum/i)).toBeInTheDocument();
+  });
+
+  it("renders all bio sections", () => {
+    render(<AboutMeModal isOpen={true} onClose={() => {}} />);
+    expect(screen.getByText(/why i design/i)).toBeInTheDocument();
+    expect(screen.getByText(/life outside the pixels/i)).toBeInTheDocument();
   });
 
   it("calls onClose when the close button is clicked", async () => {
@@ -23,8 +34,8 @@ describe("AboutMeModal", () => {
 
   it("calls onClose when the backdrop is clicked", async () => {
     const onClose = vi.fn();
-    const { container } = render(<AboutMeModal isOpen={true} onClose={onClose} />);
-    await userEvent.click(container.firstChild as Element);
+    render(<AboutMeModal isOpen={true} onClose={onClose} />);
+    await userEvent.click(screen.getByRole("dialog"));
     expect(onClose).toHaveBeenCalledOnce();
   });
 

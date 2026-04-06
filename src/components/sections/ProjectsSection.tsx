@@ -10,7 +10,7 @@ const projects = [
   },
   {
     id: 2,
-    seed: "proj2",
+    seed: "street",
     title: "Project 2",
     tags: ["Visual Design", "Prototyping"],
     desc: "[ Placeholder — case study overview coming soon ]",
@@ -35,11 +35,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="group cursor-pointer bg-white border border-gray-200 overflow-hidden
-                       shadow-[2px_4px_12px_rgba(0,0,0,0.07)]
-                       hover:shadow-[4px_8px_28px_rgba(0,0,0,0.15)]
-                       transition-shadow duration-300"
-          >
+            className="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]">
             <div className="relative w-full overflow-hidden" style={{ height: 260 }}>
               <Image
                 src={`https://picsum.photos/seed/${project.seed}/600/400`}

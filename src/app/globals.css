@@ -8,10 +8,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-clothespin: #C9A85C;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-handwritten: var(--font-just-me);
   --font-sticky: var(--font-indie-flower);
+  --font-cormorant: var(--font-cormorant);
+  --font-caveat: var(--font-caveat);
+  --font-open-sans: var(--font-open-sans);
+  --font-merriweather: var(--font-merriweather);
+  --font-roboto: var(--font-roboto);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,26 +27,15 @@
   }
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
 }
 
-/* ── Polaroid developing effect ─────────────────────────────── */
-.polaroid-photo {
-  filter: saturate(0.05) brightness(1.9) contrast(0.45) sepia(0.25);
-  transition: filter 3s ease;
-}
-
-.polaroid-card:hover .polaroid-photo {
-  filter: saturate(1) brightness(1) contrast(1) sepia(0);
-}
-
-/* Card lifts on hover */
-.polaroid-card {
-  transition: transform 0.35s ease;
-}
-
-.polaroid-card:hover {
-  transform: translateY(-8px);
+button {
+  cursor: pointer;
 }

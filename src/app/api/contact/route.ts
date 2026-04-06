@@ -23,19 +23,24 @@ export async function POST(request: Request) {
     },
   });
 
-  await transporter.sendMail({
-    from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
-    to: "joshdrochon@gmail.com",
-    replyTo: `"${name}" <${email}>`,
-    subject: `Portfolio: ${subject}`,
-    text: `From: ${name} <${email}>\n\n${message}`,
-    html: `
-      <p><strong>From:</strong> ${name} (<a href="mailto:${email}">${email}</a>)</p>
-      <p><strong>Subject:</strong> ${subject}</p>
-      <hr />
-      <p>${message.replace(/\n/g, "<br>")}</p>
-    `,
-  });
+  try {
+    await transporter.sendMail({
+      from: `"Portfolio Contact" <${process.env.SMTP_USER}>`,
+      to: "joshdrochon@gmail.com",
+      replyTo: `"${name}" <${email}>`,
+      subject: `Portfolio: ${subject}`,
+      text: `From: ${name} <${email}>\n\n${message}`,
+      html: `
+        <p><strong>From:</strong> ${name} (<a href="mailto:${email}">${email}</a>)</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <hr />
+        <p>${message.replace(/\n/g, "<br>")}</p>
+      `,
+    });
+  } catch (err) {
+    console.error("Failed to send email:", err);
+    return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+  }
 
   return NextResponse.json({ success: true });
 }

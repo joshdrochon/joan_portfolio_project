@@ -4,24 +4,15 @@ import { useState } from "react";
 import PolaroidCard from "@/components/ui/PolaroidCard";
 import AboutMeModal from "@/components/ui/AboutMeModal";
 import ContactFormModal from "@/components/ui/ContactFormModal";
+import ResumeModal from "@/components/ui/ResumeModal";
 
 function ClothespinSVG() {
   return (
-    <svg width="28" height="72" viewBox="0 0 28 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="16" height="68" viewBox="0 0 16 68" fill="none" xmlns="http://www.w3.org/2000/svg">
       {/* Body */}
-      <rect x="9" y="0" width="10" height="42" rx="5" fill="#C8A870" />
-      <rect x="11" y="0" width="6" height="42" rx="3" fill="#B89258" />
-      {/* Spring ring */}
-      <ellipse cx="14" cy="40" rx="9" ry="5" fill="#A07840" />
-      <ellipse cx="14" cy="40" rx="6" ry="3" fill="#C8A870" />
-      {/* Left leg */}
-      <rect x="1" y="38" width="11" height="34" rx="5" fill="#C8A870" />
-      {/* Right leg */}
-      <rect x="16" y="38" width="11" height="34" rx="5" fill="#C8A870" />
-      {/* Gap between legs */}
-      <rect x="10" y="44" width="8" height="28" fill="white" />
-      {/* Highlight */}
-      <rect x="12" y="2" width="3" height="20" rx="1.5" fill="#E4C090" opacity="0.7" />
+      <rect x="0" y="0" width="16" height="68" rx="4" fill="#C9A85C" />
+      {/* Spring line */}
+      <line x1="0" y1="34" x2="16" y2="34" stroke="#A0A0A0" strokeWidth="2.5" />
     </svg>
   );
 }
@@ -29,19 +20,7 @@ function ClothespinSVG() {
 export default function CardsSection() {
   const [aboutMeOpen, setAboutMeOpen] = useState(false);
   const [contactFormOpen, setContactFormOpen] = useState(false);
-
-  const scrollToProjects = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const downloadResume = () => {
-    const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Joan_Miguel_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const [resumeOpen, setResumeOpen] = useState(false);
 
   return (
     <>
@@ -64,19 +43,21 @@ export default function CardsSection() {
           <div className="relative z-10 flex justify-between px-6">
             {/* Projects */}
             <div className="flex flex-col items-center">
-              <ClothespinSVG />
-              <PolaroidCard
-                imageUrl="https://picsum.photos/seed/projectscard/400/350"
-                label="Projects"
-                onClick={scrollToProjects}
-              />
+              <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
+              <a href="#projects">
+                <PolaroidCard
+                  imageUrl="https://picsum.photos/seed/projectscard/400/350"
+                  label="Projects"
+                  onClick={() => {}}
+                />
+              </a>
             </div>
 
             {/* About Me */}
             <div className="flex flex-col items-center">
-              <ClothespinSVG />
+              <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
               <PolaroidCard
-                imageUrl="https://picsum.photos/seed/aboutmecard/400/350"
+                imageUrl="https://picsum.photos/seed/nature42/400/350"
                 label="About Me"
                 onClick={() => setAboutMeOpen(true)}
               />
@@ -84,13 +65,13 @@ export default function CardsSection() {
 
             {/* Contact — sticky note */}
             <div className="flex flex-col items-center">
-              <div className="relative z-10">
+              <div className="relative z-20 mb-[-18px]">
                 <ClothespinSVG />
               </div>
               <div
                 style={{
                   transform: "rotate(-5.55deg)",
-                  transformOrigin: "top center",
+                  transformOrigin: "center",
                   width: 288,
                 }}
               >
@@ -104,7 +85,7 @@ export default function CardsSection() {
                     style={{ height: 183 }}
                   >
                     <a
-                      href="https://www.linkedin.com/in/josh-rochon/"
+                      href="https://www.linkedin.com/in/joan-miguel/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="font-sticky text-[36px] tracking-[7.2px] text-[#1a8dd4]
@@ -131,11 +112,11 @@ export default function CardsSection() {
 
             {/* Resume */}
             <div className="flex flex-col items-center">
-              <ClothespinSVG />
+              <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
               <PolaroidCard
-                imageUrl="https://picsum.photos/seed/resumecard/400/350"
+                imageUrl="https://picsum.photos/seed/colorful99/400/350"
                 label="Resume"
-                onClick={downloadResume}
+                onClick={() => setResumeOpen(true)}
               />
             </div>
           </div>
@@ -144,6 +125,7 @@ export default function CardsSection() {
 
       <AboutMeModal isOpen={aboutMeOpen} onClose={() => setAboutMeOpen(false)} />
       <ContactFormModal isOpen={contactFormOpen} onClose={() => setContactFormOpen(false)} />
+      <ResumeModal isOpen={resumeOpen} onClose={() => setResumeOpen(false)} />
     </>
   );
 }

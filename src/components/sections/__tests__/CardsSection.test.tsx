@@ -14,7 +14,7 @@ describe("CardsSection", () => {
   it("renders the LinkedIn link with the correct URL", () => {
     render(<CardsSection />);
     const link = screen.getByRole("link", { name: /linkedin/i });
-    expect(link).toHaveAttribute("href", "https://www.linkedin.com/in/josh-rochon/");
+    expect(link).toHaveAttribute("href", "https://www.linkedin.com/in/joan-miguel/");
     expect(link).toHaveAttribute("target", "_blank");
   });
 

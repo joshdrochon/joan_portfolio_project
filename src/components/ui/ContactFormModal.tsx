@@ -26,6 +26,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     return () => document.removeEventListener("keydown", handleKey);
   }, [isOpen, onClose]);
 
+
   useEffect(() => {
     if (!isOpen) {
       const t = setTimeout(() => {
@@ -55,9 +56,11 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
   };
 
   const inputClass =
-    "w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50";
+    "w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50 rounded-[6px]";
 
   return (
+    <>
+    <style>{`body { overflow: hidden; }`}</style>
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-8"
       onClick={onClose}
@@ -65,7 +68,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
       aria-modal="true"
     >
       <div
-        className="bg-white max-w-lg w-full p-10 relative shadow-2xl"
+        className="bg-white max-w-lg w-full p-10 relative shadow-2xl rounded-[6px]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -158,7 +161,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
               type="submit"
               disabled={formState === "sending"}
               className="w-full py-3 bg-black text-white text-xs font-mono tracking-widest uppercase
-                         hover:bg-gray-800 transition-colors duration-200 disabled:opacity-50 mt-2"
+                         hover:bg-gray-800 transition-colors duration-200 disabled:opacity-50 mt-2 rounded-[6px]"
             >
               {formState === "sending" ? "Sending..." : "Send Message"}
             </button>
@@ -166,5 +169,6 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
         )}
       </div>
     </div>
+    </>
   );
 }

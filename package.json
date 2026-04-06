@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "rm -rf .next && next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -11,9 +11,9 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@types/nodemailer": "^7.0.11",
+    "@types/nodemailer": "^6.4.23",
     "next": "16.2.2",
-    "nodemailer": "^8.0.4",
+    "nodemailer": "^6.10.1",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
