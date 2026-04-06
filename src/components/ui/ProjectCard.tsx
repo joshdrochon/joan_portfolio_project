@@ -41,7 +41,7 @@ export default function ProjectCard({ seed, title, tags, desc }: ProjectCardProp
           <h3 className="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none">
             {title}
           </h3>
-          <p className="text-sm font-mono text-gray-400 mb-4">{truncate(desc, 12)}</p>
+          <p className="text-sm font-mono text-gray-400 mb-4">{truncate(desc, 15)}</p>
           <div className="flex justify-start">
             <button
               onClick={() => setModalOpen(true)}
@@ -57,6 +57,7 @@ export default function ProjectCard({ seed, title, tags, desc }: ProjectCardProp
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         title={title}
+        desc={desc}
         tags={tags}
       />
     </>

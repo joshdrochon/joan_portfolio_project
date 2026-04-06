@@ -13,14 +13,14 @@ const projects = [
     seed: "proj3",
     title: "Customer UX/UI Portfolio Wesbite",
     tags: ["User Testing", "Information Architecture"],
-    desc: "[ Placeholder — case study overview coming soon ]",
+    desc: "Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.",
   },
   {
     id: 2,
     seed: "street",
     title: "Buffalo Wild Wings Mobile App Feature",
     tags: ["Visual Design", "Prototyping"],
-    desc: "[ Placeholder — case study overview coming soon ]",
+    desc: "Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high-fidelity prototypes that translated real fan behaviors into a compelling, intuitive in-app experience.",
   },
 ];
 

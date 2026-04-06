@@ -6,10 +6,11 @@ interface ProjectModalProps {
   isOpen: boolean;
   onClose: () => void;
   title: string;
+  desc: string;
   tags: string[];
 }
 
-export default function ProjectModal({ isOpen, onClose, title, tags }: ProjectModalProps) {
+export default function ProjectModal({ isOpen, onClose, title, desc, tags }: ProjectModalProps) {
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -59,9 +60,9 @@ export default function ProjectModal({ isOpen, onClose, title, tags }: ProjectMo
             {title}
           </h2>
 
-          {/* Coming soon */}
-          <p className="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16">
-            Case study coming soon.
+          {/* Description */}
+          <p className="font-sans text-[16px] text-gray-700 leading-relaxed">
+            {desc}
           </p>
         </div>
       </div>
