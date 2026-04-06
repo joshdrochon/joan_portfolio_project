@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ContactFormModal > matches snapshot when open 1`] = `
+<DocumentFragment>
+  <style>
+    body { overflow: hidden; }
+  </style>
+  <div
+    aria-modal="true"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-8"
+    role="dialog"
+  >
+    <div
+      class="bg-white max-w-lg w-full p-10 relative shadow-2xl rounded-[6px]"
+    >
+      <button
+        aria-label="Close"
+        class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+      >
+        ✕
+      </button>
+      <h2
+        class="font-handwritten text-[56px] tracking-[6px] text-black leading-none mb-8"
+      >
+        Say Hello
+      </h2>
+      <form
+        class="space-y-4"
+      >
+        <div
+          class="grid grid-cols-2 gap-4"
+        >
+          <div>
+            <label
+              class="block text-xs font-mono tracking-widest text-gray-400 mb-2 uppercase"
+            >
+              Name
+            </label>
+            <input
+              class="w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50 rounded-[6px]"
+              placeholder="Your name"
+              required=""
+              type="text"
+              value=""
+            />
+          </div>
+          <div>
+            <label
+              class="block text-xs font-mono tracking-widest text-gray-400 mb-2 uppercase"
+            >
+              Email
+            </label>
+            <input
+              class="w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50 rounded-[6px]"
+              placeholder="your@email.com"
+              required=""
+              type="email"
+              value=""
+            />
+          </div>
+        </div>
+        <div>
+          <label
+            class="block text-xs font-mono tracking-widest text-gray-400 mb-2 uppercase"
+          >
+            Subject
+          </label>
+          <input
+            class="w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50 rounded-[6px]"
+            placeholder="What's this about?"
+            required=""
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            class="block text-xs font-mono tracking-widest text-gray-400 mb-2 uppercase"
+          >
+            Message
+          </label>
+          <textarea
+            class="w-full border border-gray-200 px-4 py-3 text-sm font-mono tracking-wide text-gray-800 placeholder-gray-300 focus:outline-none focus:border-gray-500 transition-colors bg-gray-50 rounded-[6px] resize-none"
+            placeholder="Your message..."
+            required=""
+            rows="5"
+          />
+        </div>
+        <button
+          class="w-full py-3 bg-black text-white text-xs font-mono tracking-widest uppercase
+                         hover:bg-gray-800 transition-colors duration-200 disabled:opacity-50 mt-2 rounded-[6px]"
+          type="submit"
+        >
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</DocumentFragment>
+`;

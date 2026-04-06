@@ -3,6 +3,11 @@ import userEvent from "@testing-library/user-event";
 import PolaroidCard from "../PolaroidCard";
 
 describe("PolaroidCard", () => {
+  it("matches snapshot", () => {
+    const { asFragment } = render(<PolaroidCard imageUrl="/test.jpg" label="Projects" onClick={() => {}} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("renders the label", () => {
     render(<PolaroidCard imageUrl="/test.jpg" label="Projects" onClick={() => {}} />);
     expect(screen.getByText("Projects")).toBeInTheDocument();

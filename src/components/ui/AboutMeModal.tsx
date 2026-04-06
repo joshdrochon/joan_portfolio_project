@@ -23,7 +23,8 @@ export default function AboutMeModal({ isOpen, onClose }: AboutMeModalProps) {
     <>
     {isOpen && <style>{`body { overflow: hidden; }`}</style>}
     <div
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8 ${isOpen ? "" : "hidden"}`}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+      style={{ display: isOpen ? undefined : "none" }}
       onClick={onClose}
       role="dialog"
       aria-modal="true"

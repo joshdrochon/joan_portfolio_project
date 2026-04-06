@@ -2,6 +2,11 @@ import { render, screen } from "@testing-library/react";
 import HeroSection from "../HeroSection";
 
 describe("HeroSection", () => {
+  it("matches snapshot", () => {
+    const { asFragment } = render(<HeroSection />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("renders the UX Designer heading", () => {
     render(<HeroSection />);
     expect(screen.getByRole("heading", { name: /ux designer/i })).toBeInTheDocument();

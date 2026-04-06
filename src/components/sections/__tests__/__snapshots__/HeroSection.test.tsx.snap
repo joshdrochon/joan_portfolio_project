@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeroSection > matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="flex flex-col items-center pt-16 pb-4"
+  >
+    <h1
+      class="font-handwritten text-[96px] tracking-[-0.96px] text-black text-center leading-none mb-8"
+    >
+      UX Designer
+    </h1>
+    <div
+      class="relative w-[288px] h-[288px] rounded-full overflow-hidden shadow-md"
+    >
+      <img
+        alt="Joan Miguel"
+        src="/profile.jpg"
+      />
+    </div>
+    <p
+      class="font-mono text-[20px] tracking-[4px] text-black text-center mt-6 mb-4"
+    >
+      Joan Miguel
+    </p>
+  </section>
+</DocumentFragment>
+`;

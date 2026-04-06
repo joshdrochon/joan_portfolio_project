@@ -3,6 +3,11 @@ import userEvent from "@testing-library/user-event";
 import AboutMeModal from "../AboutMeModal";
 
 describe("AboutMeModal", () => {
+  it("matches snapshot when open", () => {
+    const { asFragment } = render(<AboutMeModal isOpen={true} onClose={() => {}} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("does not render when closed", () => {
     render(<AboutMeModal isOpen={false} onClose={() => {}} />);
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();

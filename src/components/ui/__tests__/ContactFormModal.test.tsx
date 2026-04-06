@@ -14,6 +14,11 @@ afterEach(() => {
 });
 
 describe("ContactFormModal", () => {
+  it("matches snapshot when open", () => {
+    const { asFragment } = render(<ContactFormModal isOpen={true} onClose={() => {}} />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("does not render when closed", () => {
     render(<ContactFormModal isOpen={false} onClose={() => {}} />);
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();

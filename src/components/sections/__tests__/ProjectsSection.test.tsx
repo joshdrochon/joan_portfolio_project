@@ -2,6 +2,11 @@ import { render, screen } from "@testing-library/react";
 import ProjectsSection from "../ProjectsSection";
 
 describe("ProjectsSection", () => {
+  it("matches snapshot", () => {
+    const { asFragment } = render(<ProjectsSection />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("renders the Projects heading", () => {
     render(<ProjectsSection />);
     expect(screen.getByRole("heading", { name: /projects/i })).toBeInTheDocument();

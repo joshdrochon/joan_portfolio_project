@@ -1,0 +1,143 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProjectsSection > matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="max-w-[1280px] mx-auto px-12 py-20"
+    id="projects"
+  >
+    <h2
+      class="font-handwritten text-[72px] tracking-[6px] text-black text-center mb-16 leading-none"
+    >
+      Projects
+    </h2>
+    <div
+      class="grid grid-cols-3 gap-10"
+    >
+      <div
+        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+      >
+        <div
+          class="relative w-full overflow-hidden"
+          style="height: 260px;"
+        >
+          <img
+            alt="Project 1"
+            src="https://picsum.photos/seed/proj1/600/400"
+          />
+        </div>
+        <div
+          class="p-6"
+        >
+          <div
+            class="flex flex-wrap gap-2 mb-3"
+          >
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              UX Research
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Interaction Design
+            </span>
+          </div>
+          <h3
+            class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
+          >
+            Project 1
+          </h3>
+          <p
+            class="text-sm font-mono text-gray-400"
+          >
+            [ Placeholder — case study overview coming soon ]
+          </p>
+        </div>
+      </div>
+      <div
+        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+      >
+        <div
+          class="relative w-full overflow-hidden"
+          style="height: 260px;"
+        >
+          <img
+            alt="Project 2"
+            src="https://picsum.photos/seed/street/600/400"
+          />
+        </div>
+        <div
+          class="p-6"
+        >
+          <div
+            class="flex flex-wrap gap-2 mb-3"
+          >
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Visual Design
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Prototyping
+            </span>
+          </div>
+          <h3
+            class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
+          >
+            Project 2
+          </h3>
+          <p
+            class="text-sm font-mono text-gray-400"
+          >
+            [ Placeholder — case study overview coming soon ]
+          </p>
+        </div>
+      </div>
+      <div
+        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+      >
+        <div
+          class="relative w-full overflow-hidden"
+          style="height: 260px;"
+        >
+          <img
+            alt="Project 3"
+            src="https://picsum.photos/seed/proj3/600/400"
+          />
+        </div>
+        <div
+          class="p-6"
+        >
+          <div
+            class="flex flex-wrap gap-2 mb-3"
+          >
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              User Testing
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Information Architecture
+            </span>
+          </div>
+          <h3
+            class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
+          >
+            Project 3
+          </h3>
+          <p
+            class="text-sm font-mono text-gray-400"
+          >
+            [ Placeholder — case study overview coming soon ]
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</DocumentFragment>
+`;

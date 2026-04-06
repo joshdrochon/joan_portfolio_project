@@ -1,0 +1,670 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CardsSection > matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="relative w-full pt-2 pb-20"
+  >
+    <div
+      class="relative max-w-[1280px] mx-auto"
+    >
+      <div
+        class="absolute left-0 right-0 z-0"
+        style="top: 22px; height: 7px; background: linear-gradient(180deg, rgb(196, 160, 96) 0%, rgb(122, 88, 40) 40%, rgb(155, 114, 56) 70%, rgb(107, 72, 32) 100%); border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15);"
+      />
+      <div
+        class="relative z-10 flex justify-between px-6"
+      >
+        <div
+          class="flex flex-col items-center"
+        >
+          <div
+            class="relative z-20 mb-[-18px]"
+          >
+            <svg
+              fill="none"
+              height="68"
+              viewBox="0 0 16 68"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="#C9A85C"
+                height="68"
+                rx="4"
+                width="16"
+                x="0"
+                y="0"
+              />
+              <line
+                stroke="#A0A0A0"
+                stroke-width="2.5"
+                x1="0"
+                x2="16"
+                y1="34"
+                y2="34"
+              />
+            </svg>
+          </div>
+          <a
+            href="#projects"
+          >
+            <div
+              class="_card_341337 cursor-pointer select-none"
+              role="button"
+              tabindex="0"
+            >
+              <div
+                class="bg-white border border-gray-100 pt-3 px-3 pb-10 rounded-[6px]
+                   shadow-[3px_6px_18px_rgba(0,0,0,0.18)]
+                   hover:shadow-[6px_14px_36px_rgba(0,0,0,0.26)]
+                   transition-shadow duration-300"
+                style="width: 288px;"
+              >
+                <div
+                  class="_photo_341337 relative overflow-hidden"
+                  style="height: 183px;"
+                >
+                  <img
+                    alt="Projects"
+                    src="https://picsum.photos/seed/projectscard/400/350"
+                  />
+                </div>
+                <p
+                  class="font-handwritten text-[32px] tracking-[6.4px] text-black text-center mt-2 leading-none"
+                >
+                  Projects
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div
+          class="flex flex-col items-center"
+        >
+          <div
+            class="relative z-20 mb-[-18px]"
+          >
+            <svg
+              fill="none"
+              height="68"
+              viewBox="0 0 16 68"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="#C9A85C"
+                height="68"
+                rx="4"
+                width="16"
+                x="0"
+                y="0"
+              />
+              <line
+                stroke="#A0A0A0"
+                stroke-width="2.5"
+                x1="0"
+                x2="16"
+                y1="34"
+                y2="34"
+              />
+            </svg>
+          </div>
+          <div
+            class="_card_341337 cursor-pointer select-none"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="bg-white border border-gray-100 pt-3 px-3 pb-10 rounded-[6px]
+                   shadow-[3px_6px_18px_rgba(0,0,0,0.18)]
+                   hover:shadow-[6px_14px_36px_rgba(0,0,0,0.26)]
+                   transition-shadow duration-300"
+              style="width: 288px;"
+            >
+              <div
+                class="_photo_341337 relative overflow-hidden"
+                style="height: 183px;"
+              >
+                <img
+                  alt="About Me"
+                  src="https://picsum.photos/seed/nature42/400/350"
+                />
+              </div>
+              <p
+                class="font-handwritten text-[32px] tracking-[6.4px] text-black text-center mt-2 leading-none"
+              >
+                About Me
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center"
+        >
+          <div
+            class="relative z-20 mb-[-18px]"
+          >
+            <svg
+              fill="none"
+              height="68"
+              viewBox="0 0 16 68"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="#C9A85C"
+                height="68"
+                rx="4"
+                width="16"
+                x="0"
+                y="0"
+              />
+              <line
+                stroke="#A0A0A0"
+                stroke-width="2.5"
+                x1="0"
+                x2="16"
+                y1="34"
+                y2="34"
+              />
+            </svg>
+          </div>
+          <div
+            style="transform: rotate(-5.55deg); transform-origin: center; width: 288px;"
+          >
+            <div
+              class="border border-yellow-300 pt-3 px-3 pb-10
+                             shadow-[3px_6px_18px_rgba(0,0,0,0.14)]"
+              style="background: rgb(255, 255, 153);"
+            >
+              <div
+                class="flex flex-col items-center justify-center gap-6"
+                style="height: 183px;"
+              >
+                <a
+                  class="font-sticky text-[36px] tracking-[7.2px] text-[#1a8dd4]
+                                 hover:text-[#0d5fa0] hover:underline underline-offset-4
+                                 transition-colors duration-200 cursor-pointer"
+                  href="https://www.linkedin.com/in/joan-miguel/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
+                <button
+                  class="font-sticky text-[36px] tracking-[7.2px] text-[#1a8dd4]
+                                 hover:text-[#0d5fa0] hover:underline underline-offset-4
+                                 transition-colors duration-200 cursor-pointer bg-transparent border-none p-0"
+                >
+                  Email
+                </button>
+              </div>
+              <p
+                class="font-handwritten text-[32px] tracking-[6.4px] text-black text-center leading-none mt-1"
+              >
+                Contact
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col items-center"
+        >
+          <div
+            class="relative z-20 mb-[-18px]"
+          >
+            <svg
+              fill="none"
+              height="68"
+              viewBox="0 0 16 68"
+              width="16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="#C9A85C"
+                height="68"
+                rx="4"
+                width="16"
+                x="0"
+                y="0"
+              />
+              <line
+                stroke="#A0A0A0"
+                stroke-width="2.5"
+                x1="0"
+                x2="16"
+                y1="34"
+                y2="34"
+              />
+            </svg>
+          </div>
+          <div
+            class="_card_341337 cursor-pointer select-none"
+            role="button"
+            tabindex="0"
+          >
+            <div
+              class="bg-white border border-gray-100 pt-3 px-3 pb-10 rounded-[6px]
+                   shadow-[3px_6px_18px_rgba(0,0,0,0.18)]
+                   hover:shadow-[6px_14px_36px_rgba(0,0,0,0.26)]
+                   transition-shadow duration-300"
+              style="width: 288px;"
+            >
+              <div
+                class="_photo_341337 relative overflow-hidden"
+                style="height: 183px;"
+              >
+                <img
+                  alt="Resume"
+                  src="https://picsum.photos/seed/colorful99/400/350"
+                />
+              </div>
+              <p
+                class="font-handwritten text-[32px] tracking-[6.4px] text-black text-center mt-2 leading-none"
+              >
+                Resume
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div
+    aria-modal="true"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+    role="dialog"
+    style="display: none;"
+  >
+    <div
+      class="bg-[#f2f2f2] rounded-[6px] w-full max-w-[718px] overflow-y-auto relative"
+      style="max-height: calc(100vh - 96px);"
+    >
+      <button
+        aria-label="Close"
+        class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+      >
+        ✕
+      </button>
+      <div
+        class="pt-[47px] flex justify-center"
+      >
+        <div
+          class="relative w-[584px] h-[328px] rounded-[4px] overflow-hidden"
+        >
+          <img
+            alt="About Joan"
+            src="/joanaboutme.jpeg"
+          />
+        </div>
+      </div>
+      <div
+        class="px-[56px] pt-6 pb-6"
+      >
+        <p
+          class="font-mono text-[16px] tracking-[4px] text-black text-center"
+        >
+          Hi, I'm Joan Miguel. 👋
+        </p>
+        <p
+          class="font-mono font-semibold text-[16px] tracking-[3.2px] text-black text-center mt-4"
+        >
+          UX Designer | ASU Alum | Experience Enthusiast
+        </p>
+        <p
+          class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-5 leading-[1.4]"
+        >
+          My UX journey started at Arizona State University, an opportunity I earned through the Starbucks College Achievement Plan. Balancing a fast-paced barista role while earning my degree taught me the ultimate UX lesson: how to deliver a seamless, "addictive" experience even during a morning rush.
+        </p>
+        <div
+          class="mt-4"
+        >
+          <p
+            class="font-mono font-bold text-[16px] tracking-[3.2px] text-black"
+          >
+            🎨 
+            <span
+              class="font-bold"
+            >
+              Why I Design
+            </span>
+          </p>
+          <p
+            class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-1 leading-[1.4]"
+          >
+            I'm obsessed with the "sticky" factor and creating apps that are so fun and intuitive they become a natural part of a user's day. I love exploring gamification and high-engagement flows that turn a simple task into a delightful moment.
+          </p>
+        </div>
+        <div
+          class="mt-4"
+        >
+          <p
+            class="font-mono font-bold text-[16px] tracking-[3.2px] text-black"
+          >
+            🏔️ 
+            <span
+              class="font-bold"
+            >
+              Life Outside the Pixels
+            </span>
+          </p>
+          <p
+            class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-1 leading-[1.4]"
+          >
+            When I'm not in Figma, you'll find me at Stoke Mountain, the first indoor ski and snowboard park in Washington. Working there keeps me connected to the outdoors and the local community of riders.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    aria-modal="true"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+    role="dialog"
+    style="display: none;"
+  >
+    <div
+      class="bg-[#f2f2f2] rounded-[6px] w-full max-w-[900px] relative flex flex-col"
+      style="max-height: calc(100vh - 96px);"
+    >
+      <div
+        class="flex items-center justify-end gap-3 px-5 py-4 shrink-0"
+      >
+        <a
+          class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+          download="Joan_Miguel_Resume.pdf"
+          href="/resume.pdf"
+        >
+          Take One
+        </a>
+        <button
+          aria-label="Close"
+          class="text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+        >
+          ✕
+        </button>
+      </div>
+      <div
+        class="overflow-y-auto px-6 pb-6"
+      >
+        <div
+          class="bg-white rounded-[4px] px-14 py-12 text-black"
+        >
+          <div
+            class="flex justify-between items-start mb-8"
+          >
+            <div>
+              <h1
+                class="font-caveat text-[52px] leading-none text-black font-bold"
+              >
+                Joan Miguel
+              </h1>
+              <p
+                class="mt-1"
+              >
+                <span
+                  class="font-cormorant italic text-[15px] font-bold text-[#C9A85C]"
+                >
+                  POSITION
+                </span>
+                <span
+                  class="font-roboto italic text-[14px] text-gray-600"
+                >
+                   / UX/UI Developer
+                </span>
+              </p>
+            </div>
+            <div
+              class="text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light"
+            >
+              <p>
+                Seattle, WA
+              </p>
+              <p>
+                (206) 637-0438
+              </p>
+              <p>
+                joanaberionmiguel@gmail.com
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex gap-10"
+          >
+            <div
+              class="flex-[3] min-w-0"
+            >
+              <h2
+                class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"
+              >
+                EXPERIENCE
+              </h2>
+              <p
+                class="font-mono italic text-[13px] mb-2"
+              >
+                Pool, group vacationing App — UX/UI Designer
+              </p>
+              <div
+                class="pl-6 space-y-2 mb-4"
+              >
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Strategy
+                  </span>
+                   | Uncovered key user insights by conducting usability testing with 5 participants, directly influencing feature prioritization and design strategy
+                </p>
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Leadership
+                  </span>
+                   | Led end-to-end UX for a mobile group-travel app, prioritizing inclusive design and accessibility standards to improve engagement and financial accountability
+                </p>
+              </div>
+              <p
+                class="font-mono italic text-[13px] mb-2"
+              >
+                ASU, Senior Project — Student
+              </p>
+              <div
+                class="pl-6 mb-6"
+              >
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  Orchestrated a game-day marketing initiative for Wing Stop, enhancing brand visibility during key sporting events
+                </p>
+              </div>
+              <h2
+                class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"
+              >
+                WORK
+              </h2>
+              <p
+                class="font-mono italic text-[13px] mb-2"
+              >
+                Stoke Mountain (WA) — Lead Barista (current)
+              </p>
+              <div
+                class="pl-6 space-y-2 mb-4"
+              >
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Operations Lead
+                  </span>
+                   | Solely responsible for all opening/closing procedures, inventory management, and guest experience during peak operational hours
+                </p>
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Product Development
+                  </span>
+                   | Developed and tested new menu items based on rapid feedback cycles, creating a more intuitive and appealing customer journey
+                </p>
+              </div>
+              <p
+                class="font-mono italic text-[13px] mb-2"
+              >
+                Starbucks (WI, WA) — Barista (2017-2022)
+              </p>
+              <div
+                class="pl-6 space-y-2"
+              >
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Workflow
+                  </span>
+                   | Managed high-volume orders and drink production in fast-paced environments while maintaining high service standards
+                </p>
+                <p
+                  class="font-mono text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Cross-functional Collaboration
+                  </span>
+                   | Successfully integrated into 4 different store locations across WA and WI, seamlessly adapting to new team cultures and workflows
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex-[2] min-w-0"
+            >
+              <h2
+                class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"
+              >
+                SKILLS
+              </h2>
+              <div
+                class="space-y-2 mb-6"
+              >
+                <p
+                  class="font-open-sans text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    People
+                  </span>
+                  <span
+                    class="font-merriweather font-light"
+                  >
+                     | Leadership, Time Management, Multitasking, Team Training, Sales & Client Relations, Community Builder
+                  </span>
+                </p>
+                <p
+                  class="font-open-sans text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Technical
+                  </span>
+                  <span
+                    class="font-merriweather font-light"
+                  >
+                     | Figma, Adobe (Premiere Pro, Illustrator, Photoshop, InDesign, Lightroom), Trello
+                  </span>
+                </p>
+                <p
+                  class="font-open-sans text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Design
+                  </span>
+                  <span
+                    class="font-merriweather font-light"
+                  >
+                     | Accessibility (WCAG), Design Systems, Prototyping, Information Architecture, User flow, Wireframing, User Research, Usability Testing, Responsive Web, App Design
+                  </span>
+                </p>
+                <p
+                  class="font-open-sans text-[12px] leading-relaxed"
+                >
+                  <span
+                    class="font-bold"
+                  >
+                    Teams
+                  </span>
+                  <span
+                    class="font-merriweather font-light"
+                  >
+                     | Cross-functional collaboration, Data-driven design, Agile Development, Slack
+                  </span>
+                </p>
+              </div>
+              <h2
+                class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"
+              >
+                LANGUAGES
+              </h2>
+              <p
+                class="font-merriweather font-light text-[12px] leading-relaxed mb-6"
+              >
+                English, Ilocano
+              </p>
+              <h2
+                class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"
+              >
+                EDUCATION
+              </h2>
+              <p
+                class="font-cormorant italic font-bold text-[13px] leading-relaxed mb-2 text-[#C9A85C]"
+              >
+                Arizona State University, Tempe, AZ — B.S in Graphic Information Technology (summa cum laude)
+              </p>
+              <p
+                class="font-open-sans text-[12px] leading-relaxed mb-1"
+              >
+                <span
+                  class="font-bold"
+                >
+                  Focus
+                </span>
+                <span
+                  class="font-merriweather font-light"
+                >
+                   | UX/UI design in web development technologies.
+                </span>
+              </p>
+              <p
+                class="font-roboto italic font-light text-[12px] leading-relaxed"
+              >
+                (Achieved through 
+                <span
+                  class="font-bold not-italic font-open-sans"
+                >
+                  Starbucks SCRAP
+                </span>
+                 program)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

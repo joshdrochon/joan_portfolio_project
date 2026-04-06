@@ -3,6 +3,11 @@ import userEvent from "@testing-library/user-event";
 import CardsSection from "../CardsSection";
 
 describe("CardsSection", () => {
+  it("matches snapshot", () => {
+    const { asFragment } = render(<CardsSection />);
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it("renders all four card labels", () => {
     render(<CardsSection />);
     expect(screen.getByText("Projects")).toBeInTheDocument();
