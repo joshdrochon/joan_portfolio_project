@@ -118,6 +118,8 @@ src/
 │       └── __tests__/
 ├── data/
 │   └── about.ts               ← Static content (greeting, sections[])
+├── utils/
+│   └── text.ts                ← Shared utility functions (e.g. truncate)
 └── test/
     └── setup.tsx              ← next/image mock for jsdom
 ```
@@ -213,7 +215,22 @@ Current server components: `HeroSection`, `ProjectsSection`, `layout.tsx`, `page
 
 ---
 
-## 9. Data Layer
+## 9. Utility Functions
+
+Reusable, pure helper functions live in `src/utils/`. Import with `@/utils/…`.
+
+- One file per concern (e.g. `text.ts` for string helpers, `date.ts` for date helpers).
+- **Never** inline a utility function inside a component if it is — or could be — used in more than one place. Extract it to `src/utils/` immediately.
+- All utility functions must be pure (no side effects, no imports from React or Next.js).
+
+```typescript
+// src/utils/text.ts
+export function truncate(text: string, wordLimit: number): string { … }
+```
+
+---
+
+## 10. Data Layer
 
 Static content lives in `src/data/`. Import with `@/data/…`.
 
@@ -231,7 +248,7 @@ Project data is currently inlined in `ProjectsSection.tsx`. If it grows, extract
 
 ---
 
-## 10. API Routes
+## 11. API Routes
 
 - `POST /api/contact` — sends email via nodemailer (Gmail SMTP).
 - Requires env vars: `SMTP_HOST`, `SMTP_USER`, `SMTP_PASS`.
@@ -239,7 +256,7 @@ Project data is currently inlined in `ProjectsSection.tsx`. If it grows, extract
 
 ---
 
-## 11. Required Figma Implementation Flow (do not skip)
+## 12. Required Figma Implementation Flow (do not skip)
 
 1. Run `get_design_context` for the exact node(s) to get structured output + a code reference.
 2. If response is too large/truncated, run `get_metadata` for the node map, then re-fetch specific nodes.
@@ -250,7 +267,7 @@ Project data is currently inlined in `ProjectsSection.tsx`. If it grows, extract
 
 ---
 
-## 12. Implementation Rules
+## 13. Implementation Rules
 
 - Treat Figma MCP output as design intent, not final code — always adapt to project conventions.
 - Reuse existing components from `src/components/` before creating new ones.

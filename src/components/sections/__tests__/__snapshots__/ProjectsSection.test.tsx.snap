@@ -15,19 +15,19 @@ exports[`ProjectsSection > matches snapshot 1`] = `
       class="grid grid-cols-3 gap-10"
     >
       <div
-        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+        class="group bg-white border border-gray-200 overflow-hidden rounded-[6px]"
       >
         <div
           class="relative w-full overflow-hidden"
           style="height: 260px;"
         >
           <img
-            alt="Project 1"
+            alt="Lawnboy Website Revamp"
             src="https://picsum.photos/seed/proj1/600/400"
           />
         </div>
         <div
-          class="p-6"
+          class="p-6 flex flex-col"
         >
           <div
             class="flex flex-wrap gap-2 mb-3"
@@ -46,70 +46,84 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <h3
             class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
           >
-            Project 1
+            Lawnboy Website Revamp
           </h3>
           <p
-            class="text-sm font-mono text-gray-400"
+            class="text-sm font-mono text-gray-400 mb-4"
           >
-            [ Placeholder — case study overview coming soon ]
+            Partnered with a family-owned small business to modernize their digital presence —...
           </p>
-        </div>
-      </div>
-      <div
-        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
-      >
-        <div
-          class="relative w-full overflow-hidden"
-          style="height: 260px;"
-        >
-          <img
-            alt="Project 2"
-            src="https://picsum.photos/seed/street/600/400"
-          />
-        </div>
-        <div
-          class="p-6"
-        >
           <div
-            class="flex flex-wrap gap-2 mb-3"
+            class="flex justify-start"
           >
-            <span
-              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            <button
+              class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
             >
-              Visual Design
-            </span>
-            <span
-              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
-            >
-              Prototyping
-            </span>
+              Read More
+            </button>
           </div>
-          <h3
-            class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
-          >
-            Project 2
-          </h3>
-          <p
-            class="text-sm font-mono text-gray-400"
-          >
-            [ Placeholder — case study overview coming soon ]
-          </p>
         </div>
       </div>
       <div
-        class="group cursor-pointer bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+        aria-modal="true"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        role="dialog"
+        style="display: none;"
+      >
+        <div
+          class="bg-white rounded-[6px] w-full max-w-[718px] relative"
+          style="max-height: calc(100vh - 96px);"
+        >
+          <button
+            aria-label="Close"
+            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+          >
+            ✕
+          </button>
+          <div
+            class="p-10"
+          >
+            <div
+              class="flex flex-wrap gap-2 mb-4"
+            >
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                UX Research
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Interaction Design
+              </span>
+            </div>
+            <h2
+              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+            >
+              Lawnboy Website Revamp
+            </h2>
+            <p
+              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+            >
+              Case study coming soon.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group bg-white border border-gray-200 overflow-hidden rounded-[6px]"
       >
         <div
           class="relative w-full overflow-hidden"
           style="height: 260px;"
         >
           <img
-            alt="Project 3"
+            alt="Customer UX/UI Portfolio Wesbite"
             src="https://picsum.photos/seed/proj3/600/400"
           />
         </div>
         <div
-          class="p-6"
+          class="p-6 flex flex-col"
         >
           <div
             class="flex flex-wrap gap-2 mb-3"
@@ -128,13 +142,164 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <h3
             class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
           >
-            Project 3
+            Customer UX/UI Portfolio Wesbite
           </h3>
           <p
-            class="text-sm font-mono text-gray-400"
+            class="text-sm font-mono text-gray-400 mb-4"
           >
             [ Placeholder — case study overview coming soon ]
           </p>
+          <div
+            class="flex justify-start"
+          >
+            <button
+              class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-modal="true"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        role="dialog"
+        style="display: none;"
+      >
+        <div
+          class="bg-white rounded-[6px] w-full max-w-[718px] relative"
+          style="max-height: calc(100vh - 96px);"
+        >
+          <button
+            aria-label="Close"
+            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+          >
+            ✕
+          </button>
+          <div
+            class="p-10"
+          >
+            <div
+              class="flex flex-wrap gap-2 mb-4"
+            >
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                User Testing
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Information Architecture
+              </span>
+            </div>
+            <h2
+              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+            >
+              Customer UX/UI Portfolio Wesbite
+            </h2>
+            <p
+              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+            >
+              Case study coming soon.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="group bg-white border border-gray-200 overflow-hidden rounded-[6px]"
+      >
+        <div
+          class="relative w-full overflow-hidden"
+          style="height: 260px;"
+        >
+          <img
+            alt="Buffalo Wild Wings Mobile App Feature"
+            src="https://picsum.photos/seed/street/600/400"
+          />
+        </div>
+        <div
+          class="p-6 flex flex-col"
+        >
+          <div
+            class="flex flex-wrap gap-2 mb-3"
+          >
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Visual Design
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Prototyping
+            </span>
+          </div>
+          <h3
+            class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
+          >
+            Buffalo Wild Wings Mobile App Feature
+          </h3>
+          <p
+            class="text-sm font-mono text-gray-400 mb-4"
+          >
+            [ Placeholder — case study overview coming soon ]
+          </p>
+          <div
+            class="flex justify-start"
+          >
+            <button
+              class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        aria-modal="true"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        role="dialog"
+        style="display: none;"
+      >
+        <div
+          class="bg-white rounded-[6px] w-full max-w-[718px] relative"
+          style="max-height: calc(100vh - 96px);"
+        >
+          <button
+            aria-label="Close"
+            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+          >
+            ✕
+          </button>
+          <div
+            class="p-10"
+          >
+            <div
+              class="flex flex-wrap gap-2 mb-4"
+            >
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Visual Design
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Prototyping
+              </span>
+            </div>
+            <h2
+              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+            >
+              Buffalo Wild Wings Mobile App Feature
+            </h2>
+            <p
+              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+            >
+              Case study coming soon.
+            </p>
+          </div>
         </div>
       </div>
     </div>
