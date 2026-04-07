@@ -23,9 +23,9 @@ describe("ResumeModal", () => {
     expect(screen.getByText("Joan Miguel")).toBeInTheDocument();
   });
 
-  it("renders the Take One download link", () => {
+  it("renders the Save Copy download link", () => {
     render(<ResumeModal isOpen={true} onClose={() => {}} />);
-    const link = screen.getByRole("link", { name: /take one/i });
+    const link = screen.getByRole("link", { name: /save copy/i });
     expect(link).toHaveAttribute("href", "/resume.pdf");
     expect(link).toHaveAttribute("download");
   });

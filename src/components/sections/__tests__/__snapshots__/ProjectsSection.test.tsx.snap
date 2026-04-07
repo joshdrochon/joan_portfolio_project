@@ -23,7 +23,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
         >
           <img
             alt="Lawnboy Website Revamp"
-            src="https://picsum.photos/seed/proj1/600/400"
+            src="https://images.unsplash.com/photo-1458245201577-fc8a130b8829?w=600&h=400&fit=crop"
           />
         </div>
         <div
@@ -40,7 +40,27 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             <span
               class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
             >
+              Brand Identity
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Responsive Web
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Wireframing
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
               Interaction Design
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Figma AI
             </span>
           </div>
           <h3
@@ -49,9 +69,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             Lawnboy Website Revamp
           </h3>
           <p
-            class="text-sm font-mono text-gray-400 mb-4"
+            class="text-sm font-sans text-gray-400 mb-4"
           >
-            Partnered with a family-owned small business to modernize their digital presence —...
+            Partnered with a family-owned small business to modernize their digital presence — crafting a fresh,...
           </p>
           <div
             class="flex justify-start"
@@ -76,7 +96,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
         >
           <button
             aria-label="Close"
-            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+            class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
           >
             ✕
           </button>
@@ -94,7 +114,27 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               <span
                 class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
               >
+                Brand Identity
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Responsive Web
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Wireframing
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
                 Interaction Design
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Figma AI
               </span>
             </div>
             <h2
@@ -103,9 +143,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               Lawnboy Website Revamp
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Partnered with a family-owned small business to modernize their digital presence — crafting a fresh, welcoming site designed to reflect their brand and drive new business.
             </p>
           </div>
         </div>
@@ -118,8 +158,8 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           style="height: 260px;"
         >
           <img
-            alt="Customer UX/UI Portfolio Wesbite"
-            src="https://picsum.photos/seed/proj3/600/400"
+            alt="Custom UX/UI Portfolio Wesbite"
+            src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?w=600&h=400&fit=crop"
           />
         </div>
         <div
@@ -131,23 +171,33 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             <span
               class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
             >
-              User Testing
+              Cross-functional Collaboration
             </span>
             <span
               class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
             >
               Information Architecture
             </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Visual Design
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Figma
+            </span>
           </div>
           <h3
             class="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none"
           >
-            Customer UX/UI Portfolio Wesbite
+            Custom UX/UI Portfolio Wesbite
           </h3>
           <p
-            class="text-sm font-mono text-gray-400 mb-4"
+            class="text-sm font-sans text-gray-400 mb-4"
           >
-            [ Placeholder — case study overview coming soon ]
+            Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing,...
           </p>
           <div
             class="flex justify-start"
@@ -172,7 +222,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
         >
           <button
             aria-label="Close"
-            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+            class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
           >
             ✕
           </button>
@@ -185,23 +235,33 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               <span
                 class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
               >
-                User Testing
+                Cross-functional Collaboration
               </span>
               <span
                 class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
               >
                 Information Architecture
               </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Visual Design
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Figma
+              </span>
             </div>
             <h2
               class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
             >
-              Customer UX/UI Portfolio Wesbite
+              Custom UX/UI Portfolio Wesbite
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.
             </p>
           </div>
         </div>
@@ -215,7 +275,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
         >
           <img
             alt="Buffalo Wild Wings Mobile App Feature"
-            src="https://picsum.photos/seed/street/600/400"
+            src="https://images.unsplash.com/photo-1578875858391-50798bc2ffee?w=600&h=400&fit=crop"
           />
         </div>
         <div
@@ -227,12 +287,32 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             <span
               class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
             >
-              Visual Design
+              User Research
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              App Design
             </span>
             <span
               class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
             >
               Prototyping
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Usability Testing
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              User Flows
+            </span>
+            <span
+              class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+            >
+              Motion Design
             </span>
           </div>
           <h3
@@ -241,9 +321,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             Buffalo Wild Wings Mobile App Feature
           </h3>
           <p
-            class="text-sm font-mono text-gray-400 mb-4"
+            class="text-sm font-sans text-gray-400 mb-4"
           >
-            [ Placeholder — case study overview coming soon ]
+            Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone...
           </p>
           <div
             class="flex justify-start"
@@ -268,7 +348,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
         >
           <button
             aria-label="Close"
-            class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+            class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
           >
             ✕
           </button>
@@ -281,12 +361,32 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               <span
                 class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
               >
-                Visual Design
+                User Research
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                App Design
               </span>
               <span
                 class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
               >
                 Prototyping
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Usability Testing
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                User Flows
+              </span>
+              <span
+                class="text-xs font-mono tracking-wide text-gray-400 border border-gray-200 rounded-full px-3 py-1"
+              >
+                Motion Design
               </span>
             </div>
             <h2
@@ -295,9 +395,9 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               Buffalo Wild Wings Mobile App Feature
             </h2>
             <p
-              class="font-mono text-[14px] tracking-[3px] text-gray-400 text-center py-16"
+              class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Case study coming soon.
+              Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high-fidelity prototypes that translated real fan behaviors into a compelling, intuitive in-app experience.
             </p>
           </div>
         </div>

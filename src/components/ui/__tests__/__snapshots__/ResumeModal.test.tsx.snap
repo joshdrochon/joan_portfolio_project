@@ -11,22 +11,22 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
     role="dialog"
   >
     <div
-      class="bg-[#f2f2f2] rounded-[6px] w-full max-w-[900px] relative flex flex-col"
+      class="bg-white rounded-[6px] w-full max-w-[900px] relative flex flex-col"
       style="max-height: calc(100vh - 96px);"
     >
       <div
-        class="flex items-center justify-end gap-3 px-5 py-4 shrink-0"
+        class="flex items-center justify-between px-5 py-4 shrink-0"
       >
         <a
-          class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+          class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
           download="Joan_Miguel_Resume.pdf"
           href="/resume.pdf"
         >
-          Take One
+          Save Copy
         </a>
         <button
           aria-label="Close"
-          class="text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+          class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors"
         >
           ✕
         </button>
@@ -35,7 +35,7 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
         class="overflow-y-auto px-6 pb-6"
       >
         <div
-          class="bg-white rounded-[4px] px-14 py-12 text-black"
+          class="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl"
         >
           <div
             class="flex justify-between items-start mb-8"

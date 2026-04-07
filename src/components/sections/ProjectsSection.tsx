@@ -3,24 +3,24 @@ import ProjectCard from "@/components/ui/ProjectCard";
 const projects = [
   {
     id: 1,
-    seed: "proj1",
+    imageUrl: "https://images.unsplash.com/photo-1458245201577-fc8a130b8829?w=600&h=400&fit=crop",
     title: "Lawnboy Website Revamp",
-    tags: ["UX Research", "Interaction Design"],
+    tags: ["UX Research", "Brand Identity", "Responsive Web", "Wireframing", "Interaction Design", "Figma AI"],
     desc: "Partnered with a family-owned small business to modernize their digital presence — crafting a fresh, welcoming site designed to reflect their brand and drive new business.",
   },
   {
     id: 3,
-    seed: "proj3",
-    title: "Customer UX/UI Portfolio Wesbite",
-    tags: ["User Testing", "Information Architecture"],
-    desc: "[ Placeholder — case study overview coming soon ]",
+    imageUrl: "https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?w=600&h=400&fit=crop",
+    title: "Custom UX/UI Portfolio Wesbite",
+    tags: ["Cross-functional Collaboration", "Information Architecture", "Visual Design", "Figma"],
+    desc: "Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.",
   },
   {
     id: 2,
-    seed: "street",
+    imageUrl: "https://images.unsplash.com/photo-1578875858391-50798bc2ffee?w=600&h=400&fit=crop",
     title: "Buffalo Wild Wings Mobile App Feature",
-    tags: ["Visual Design", "Prototyping"],
-    desc: "[ Placeholder — case study overview coming soon ]",
+    tags: ["User Research", "App Design", "Prototyping", "Usability Testing", "User Flows", "Motion Design"],
+    desc: "Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high-fidelity prototypes that translated real fan behaviors into a compelling, intuitive in-app experience.",
   },
 ];
 

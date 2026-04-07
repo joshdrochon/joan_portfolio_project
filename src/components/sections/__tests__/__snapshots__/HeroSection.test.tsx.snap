@@ -19,7 +19,7 @@ exports[`HeroSection > matches snapshot 1`] = `
       />
     </div>
     <p
-      class="font-mono text-[20px] tracking-[4px] text-black text-center mt-6 mb-4"
+      class="font-handwritten text-[32px] tracking-[4px] text-black text-center mt-6 mb-4"
     >
       Joan Miguel
     </p>
