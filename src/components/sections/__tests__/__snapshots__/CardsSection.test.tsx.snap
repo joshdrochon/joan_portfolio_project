@@ -3,17 +3,17 @@
 exports[`CardsSection > matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    class="relative w-full pt-2 pb-20"
+    class="relative w-full pt-2 pb-12 md:pb-20"
   >
     <div
       class="relative max-w-[1280px] mx-auto"
     >
       <div
-        class="absolute left-0 right-0 z-0"
+        class="absolute left-0 right-0 z-0 hidden md:block"
         style="top: 22px; height: 7px; background: linear-gradient(180deg, rgb(196, 160, 96) 0%, rgb(122, 88, 40) 40%, rgb(155, 114, 56) 70%, rgb(107, 72, 32) 100%); border-radius: 4px; box-shadow: 0 2px 6px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.15);"
       />
       <div
-        class="relative z-10 flex justify-between px-6"
+        class="relative z-10 flex flex-col items-center gap-8 md:flex-row md:justify-between md:gap-0 md:px-6"
       >
         <div
           class="flex flex-col items-center"
@@ -273,7 +273,7 @@ exports[`CardsSection > matches snapshot 1`] = `
   </section>
   <div
     aria-modal="true"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
     role="dialog"
     style="display: none;"
   >
@@ -288,10 +288,10 @@ exports[`CardsSection > matches snapshot 1`] = `
         ✕
       </button>
       <div
-        class="pt-[47px] px-[56px]"
+        class="pt-6 md:pt-[47px] px-4 md:px-[56px]"
       >
         <div
-          class="relative w-full h-[328px] rounded-[4px] overflow-hidden"
+          class="relative w-full h-[200px] md:h-[328px] rounded-[4px] overflow-hidden"
         >
           <img
             alt="About Joan"
@@ -300,7 +300,7 @@ exports[`CardsSection > matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="px-[56px] pt-6 pb-10"
+        class="px-4 md:px-[56px] pt-6 pb-10"
       >
         <p
           class="font-handwritten text-[24px] tracking-[3px] text-black text-center leading-none"
@@ -373,17 +373,33 @@ exports[`CardsSection > matches snapshot 1`] = `
     </div>
   </div>
   <div
+    class="md:hidden fixed top-0 left-0 right-0 z-[60] flex justify-between items-center px-4 py-4 transition-opacity duration-500 pointer-events-none opacity-0"
+  >
+    <a
+      class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 bg-white hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
+      download="Joan_Miguel_Resume.pdf"
+      href="/resume.pdf"
+    >
+      Save Copy
+    </a>
+    <button
+      aria-label="Close"
+      class="text-gray-500 hover:text-black text-2xl leading-none transition-colors bg-white rounded-full w-9 h-9 flex items-center justify-center shadow-sm"
+    >
+      ✕
+    </button>
+  </div>
+  <div
     aria-modal="true"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 md:px-8"
     role="dialog"
     style="display: none;"
   >
     <div
-      class="bg-white rounded-[6px] w-full max-w-[900px] relative flex flex-col"
-      style="max-height: calc(100vh - 96px);"
+      class="bg-white w-full h-dvh md:h-auto md:max-h-[calc(100vh-96px)] md:rounded-[6px] md:max-w-[900px] relative flex flex-col"
     >
       <div
-        class="flex items-center justify-between px-5 py-4 shrink-0"
+        class="hidden md:flex items-center justify-between px-5 py-4 shrink-0"
       >
         <a
           class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
@@ -400,17 +416,17 @@ exports[`CardsSection > matches snapshot 1`] = `
         </button>
       </div>
       <div
-        class="overflow-y-auto px-6 pb-6"
+        class="overflow-y-auto px-4 pb-6 md:px-6 pt-16 md:pt-0"
       >
         <div
-          class="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl"
+          class="bg-white rounded-[4px] px-6 py-8 md:px-14 md:py-12 text-black md:shadow-2xl"
         >
           <div
-            class="flex justify-between items-start mb-8"
+            class="flex flex-col gap-2 md:flex-row md:justify-between md:items-start mb-8"
           >
             <div>
               <h1
-                class="font-caveat text-[52px] leading-none text-black font-bold"
+                class="font-caveat text-[36px] md:text-[52px] leading-none text-black font-bold"
               >
                 Joan Miguel
               </h1>
@@ -430,7 +446,7 @@ exports[`CardsSection > matches snapshot 1`] = `
               </p>
             </div>
             <div
-              class="text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light"
+              class="text-left md:text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light"
             >
               <p>
                 Seattle, WA
@@ -444,7 +460,7 @@ exports[`CardsSection > matches snapshot 1`] = `
             </div>
           </div>
           <div
-            class="flex gap-10"
+            class="flex flex-col md:flex-row md:gap-10"
           >
             <div
               class="flex-[3] min-w-0"
@@ -562,7 +578,7 @@ exports[`CardsSection > matches snapshot 1`] = `
               </div>
             </div>
             <div
-              class="flex-[2] min-w-0"
+              class="flex-[2] min-w-0 mt-6 md:mt-0"
             >
               <h2
                 class="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3"

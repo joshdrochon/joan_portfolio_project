@@ -21,7 +21,7 @@ export default function ProjectModal({ isOpen, onClose, title, desc, tags }: Pro
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
       style={{ display: isOpen ? undefined : "none" }}
       onClick={onClose}
       role="dialog"
@@ -42,7 +42,7 @@ export default function ProjectModal({ isOpen, onClose, title, desc, tags }: Pro
           ✕
         </button>
 
-        <div className="p-10">
+        <div className="p-6 md:p-10">
           {/* Tags */}
           <div className="flex flex-wrap gap-2 mb-4">
             {tags.map((tag) => (
@@ -56,7 +56,7 @@ export default function ProjectModal({ isOpen, onClose, title, desc, tags }: Pro
           </div>
 
           {/* Title */}
-          <h2 className="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8">
+          <h2 className="font-handwritten text-[32px] md:text-[48px] tracking-[3px] text-black leading-none mb-8">
             {title}
           </h2>
 

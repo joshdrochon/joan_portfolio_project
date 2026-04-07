@@ -23,7 +23,7 @@ export default function AboutMeModal({ isOpen, onClose }: AboutMeModalProps) {
     <>
     {isOpen && <style>{`body { overflow: hidden; }`}</style>}
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
       style={{ display: isOpen ? undefined : "none" }}
       onClick={onClose}
       role="dialog"
@@ -43,15 +43,15 @@ export default function AboutMeModal({ isOpen, onClose }: AboutMeModalProps) {
           ✕
         </button>
 
-        {/* Top placeholder image */}
-        <div className="pt-[47px] px-[56px]">
-          <div className="relative w-full h-[328px] rounded-[4px] overflow-hidden">
+        {/* Top image */}
+        <div className="pt-6 md:pt-[47px] px-4 md:px-[56px]">
+          <div className="relative w-full h-[200px] md:h-[328px] rounded-[4px] overflow-hidden">
             <Image src="/joanaboutme.jpeg" alt="About Joan" fill priority className="object-cover" style={{ objectPosition: 'center calc(20% - 25px)' }} />
           </div>
         </div>
 
         {/* Content */}
-        <div className="px-[56px] pt-6 pb-10">
+        <div className="px-4 md:px-[56px] pt-6 pb-10">
           {/* Greeting */}
           <p className="font-handwritten text-[24px] tracking-[3px] text-black text-center leading-none">
             {about.greeting}

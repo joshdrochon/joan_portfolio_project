@@ -3,16 +3,16 @@
 exports[`ProjectsSection > matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    class="max-w-[1280px] mx-auto px-12 py-20"
+    class="max-w-[1280px] mx-auto px-6 md:px-12 py-12 md:py-20"
     id="projects"
   >
     <h2
-      class="font-handwritten text-[72px] tracking-[6px] text-black text-center mb-16 leading-none"
+      class="font-handwritten text-[48px] md:text-[72px] tracking-[6px] text-black text-center mb-8 md:mb-16 leading-none"
     >
       Projects
     </h2>
     <div
-      class="grid grid-cols-3 gap-10"
+      class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10"
     >
       <div
         class="group bg-white border border-gray-200 overflow-hidden rounded-[6px]"
@@ -71,7 +71,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-sans text-gray-400 mb-4"
           >
-            Partnered with a family-owned small business to modernize their digital presence — crafting a fresh,...
+            Partnered with a family owned small business to modernize their digital presence, crafting a fresh,...
           </p>
           <div
             class="flex justify-start"
@@ -86,7 +86,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
       </div>
       <div
         aria-modal="true"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
         role="dialog"
         style="display: none;"
       >
@@ -101,7 +101,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             ✕
           </button>
           <div
-            class="p-10"
+            class="p-6 md:p-10"
           >
             <div
               class="flex flex-wrap gap-2 mb-4"
@@ -138,14 +138,14 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               </span>
             </div>
             <h2
-              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+              class="font-handwritten text-[32px] md:text-[48px] tracking-[3px] text-black leading-none mb-8"
             >
               Lawnboy Website Revamp
             </h2>
             <p
               class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Partnered with a family-owned small business to modernize their digital presence — crafting a fresh, welcoming site designed to reflect their brand and drive new business.
+              Partnered with a family owned small business to modernize their digital presence, crafting a fresh, welcoming site designed to reflect their brand and drive new business.
             </p>
           </div>
         </div>
@@ -197,7 +197,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-sans text-gray-400 mb-4"
           >
-            Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing,...
+            Collaborated closely with a software engineer to bring this portfolio to life, conceptualizing, designing, and...
           </p>
           <div
             class="flex justify-start"
@@ -212,7 +212,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
       </div>
       <div
         aria-modal="true"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
         role="dialog"
         style="display: none;"
       >
@@ -227,7 +227,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             ✕
           </button>
           <div
-            class="p-10"
+            class="p-6 md:p-10"
           >
             <div
               class="flex flex-wrap gap-2 mb-4"
@@ -254,14 +254,14 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               </span>
             </div>
             <h2
-              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+              class="font-handwritten text-[32px] md:text-[48px] tracking-[3px] text-black leading-none mb-8"
             >
               Custom UX/UI Portfolio Wesbite
             </h2>
             <p
               class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Collaborated closely with a software engineer to bring this portfolio to life — conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.
+              Collaborated closely with a software engineer to bring this portfolio to life, conceptualizing, designing, and iterating entirely in Figma from scratch, then seeing it through to a fully built, deployed website. Every layout, color choice, and interaction was designed with intention to create a seamless and personal experience.
             </p>
           </div>
         </div>
@@ -323,7 +323,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
           <p
             class="text-sm font-sans text-gray-400 mb-4"
           >
-            Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone...
+            Orchestrated a game day marketing initiative for Buffalo Wild Wings as part of a senior...
           </p>
           <div
             class="flex justify-start"
@@ -338,7 +338,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
       </div>
       <div
         aria-modal="true"
-        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
         role="dialog"
         style="display: none;"
       >
@@ -353,7 +353,7 @@ exports[`ProjectsSection > matches snapshot 1`] = `
             ✕
           </button>
           <div
-            class="p-10"
+            class="p-6 md:p-10"
           >
             <div
               class="flex flex-wrap gap-2 mb-4"
@@ -390,14 +390,14 @@ exports[`ProjectsSection > matches snapshot 1`] = `
               </span>
             </div>
             <h2
-              class="font-handwritten text-[48px] tracking-[3px] text-black leading-none mb-8"
+              class="font-handwritten text-[32px] md:text-[48px] tracking-[3px] text-black leading-none mb-8"
             >
               Buffalo Wild Wings Mobile App Feature
             </h2>
             <p
               class="font-sans text-[16px] text-gray-700 leading-relaxed"
             >
-              Orchestrated a game-day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high-fidelity prototypes that translated real fan behaviors into a compelling, intuitive in-app experience.
+              Orchestrated a game day marketing initiative for Buffalo Wild Wings as part of a senior capstone project at ASU, developing a mobile app feature concept designed to enhance brand visibility and fan engagement during key sporting events. Conducted user research, built wireframes, and delivered high fidelity prototypes that translated real fan behaviors into a compelling, intuitive in app experience.
             </p>
           </div>
         </div>

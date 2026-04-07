@@ -62,13 +62,13 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
     <>
     <style>{`body { overflow: hidden; }`}</style>
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-8"
+      className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 md:p-8"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
     >
       <div
-        className="bg-white max-w-lg w-full p-10 relative shadow-2xl rounded-[6px]"
+        className="bg-white max-w-lg w-full p-6 md:p-10 relative shadow-2xl rounded-[6px]"
         onClick={(e) => e.stopPropagation()}
       >
         <button
@@ -79,13 +79,13 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
           ✕
         </button>
 
-        <h2 className="font-handwritten text-[56px] tracking-[6px] text-black leading-none mb-8">
+        <h2 className="font-handwritten text-[40px] md:text-[56px] tracking-[6px] text-black leading-none mb-8">
           Say Hello
         </h2>
 
         {formState === "success" ? (
           <div className="text-center py-10">
-            <p className="font-handwritten text-[48px] tracking-wide text-black mb-3 leading-none">
+            <p className="font-handwritten text-[32px] md:text-[48px] tracking-wide text-black mb-3 leading-none">
               Message sent!
             </p>
             <p className="text-sm text-gray-400 font-mono tracking-wide mt-4">
@@ -94,7 +94,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label className="block text-xs font-mono tracking-widest text-gray-400 mb-2 uppercase">
                   Name

@@ -3,15 +3,15 @@
 exports[`HeroSection > matches snapshot 1`] = `
 <DocumentFragment>
   <section
-    class="flex flex-col items-center pt-16 pb-4"
+    class="flex flex-col items-center pt-8 pb-4 md:pt-16"
   >
     <h1
-      class="font-handwritten text-[96px] tracking-[-0.96px] text-black text-center leading-none mb-8"
+      class="font-handwritten text-[56px] md:text-[96px] tracking-[-0.96px] text-black text-center leading-none mb-8"
     >
       UX Designer
     </h1>
     <div
-      class="relative w-[288px] h-[288px] rounded-full overflow-hidden shadow-md"
+      class="relative w-[200px] h-[200px] md:w-[288px] md:h-[288px] rounded-full overflow-hidden shadow-md"
     >
       <img
         alt="Joan Miguel"
@@ -19,7 +19,7 @@ exports[`HeroSection > matches snapshot 1`] = `
       />
     </div>
     <p
-      class="font-handwritten text-[32px] tracking-[4px] text-black text-center mt-6 mb-4"
+      class="font-handwritten text-[24px] md:text-[32px] tracking-[4px] text-black text-center mt-6 mb-4"
     >
       Joan Miguel
     </p>

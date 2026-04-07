@@ -24,11 +24,12 @@ export default function CardsSection() {
 
   return (
     <>
-      <section className="relative w-full pt-2 pb-20">
+      <section className="relative w-full pt-2 pb-12 md:pb-20">
         <div className="relative max-w-[1280px] mx-auto">
-          {/* Rope */}
+
+          {/* Rope — desktop only */}
           <div
-            className="absolute left-0 right-0 z-0"
+            className="absolute left-0 right-0 z-0 hidden md:block"
             style={{
               top: 22,
               height: 7,
@@ -39,8 +40,9 @@ export default function CardsSection() {
             }}
           />
 
-          {/* Cards row */}
-          <div className="relative z-10 flex justify-between px-6">
+          {/* Cards — vertical stack on mobile, horizontal row on desktop */}
+          <div className="relative z-10 flex flex-col items-center gap-8 md:flex-row md:justify-between md:gap-0 md:px-6">
+
             {/* Projects */}
             <div className="flex flex-col items-center">
               <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
@@ -120,6 +122,7 @@ export default function CardsSection() {
                 onClick={() => setResumeOpen(true)}
               />
             </div>
+
           </div>
         </div>
       </section>

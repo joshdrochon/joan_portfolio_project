@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface ResumeModalProps {
   isOpen: boolean;
@@ -8,6 +8,10 @@ interface ResumeModalProps {
 }
 
 export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
+  const [buttonsVisible, setButtonsVisible] = useState(true);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scrollTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -16,23 +20,63 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
     return () => document.removeEventListener("keydown", handleKey);
   }, [isOpen, onClose]);
 
+  // Reset button visibility when modal opens
+  useEffect(() => {
+    if (isOpen) setButtonsVisible(true);
+  }, [isOpen]);
+
+  // Cleanup scroll timer on unmount
+  useEffect(() => {
+    return () => {
+      if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    setButtonsVisible(false);
+    if (scrollTimerRef.current) clearTimeout(scrollTimerRef.current);
+    scrollTimerRef.current = setTimeout(() => setButtonsVisible(true), 500);
+  };
+
   return (
     <>
       {isOpen && <style>{`body { overflow: hidden; }`}</style>}
+
+      {/* Mobile floating buttons — fade on scroll */}
       <div
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
-      style={{ display: isOpen ? undefined : "none" }}
+        className={`md:hidden fixed top-0 left-0 right-0 z-[60] flex justify-between items-center px-4 py-4 transition-opacity duration-500 ${
+          isOpen ? "pointer-events-auto" : "pointer-events-none"
+        } ${buttonsVisible && isOpen ? "opacity-100" : "opacity-0"}`}
+      >
+        <a
+          href="/resume.pdf"
+          download="Joan_Miguel_Resume.pdf"
+          className="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 bg-white hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
+        >
+          Save Copy
+        </a>
+        <button
+          onClick={onClose}
+          className="text-gray-500 hover:text-black text-2xl leading-none transition-colors bg-white rounded-full w-9 h-9 flex items-center justify-center shadow-sm"
+          aria-label="Close"
+        >
+          ✕
+        </button>
+      </div>
+
+      <div
+        className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 md:px-8"
+        style={{ display: isOpen ? undefined : "none" }}
         onClick={onClose}
         role="dialog"
         aria-modal="true"
       >
         <div
-          className="bg-white rounded-[6px] w-full max-w-[900px] relative flex flex-col"
-          style={{ maxHeight: "calc(100vh - 96px)" }}
+          className="bg-white w-full h-dvh md:h-auto md:max-h-[calc(100vh-96px)] md:rounded-[6px] md:max-w-[900px] relative flex flex-col"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Header bar */}
-          <div className="flex items-center justify-between px-5 py-4 shrink-0">
+          {/* Header bar — desktop only */}
+          <div className="hidden md:flex items-center justify-between px-5 py-4 shrink-0">
             <a
               href="/resume.pdf"
               download="Joan_Miguel_Resume.pdf"
@@ -50,19 +94,23 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
           </div>
 
           {/* Resume document */}
-          <div className="overflow-y-auto px-6 pb-6">
-            <div className="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl">
+          <div
+            ref={scrollRef}
+            onScroll={handleScroll}
+            className="overflow-y-auto px-4 pb-6 md:px-6 pt-16 md:pt-0"
+          >
+            <div className="bg-white rounded-[4px] px-6 py-8 md:px-14 md:py-12 text-black md:shadow-2xl">
 
               {/* Header */}
-              <div className="flex justify-between items-start mb-8">
+              <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-start mb-8">
                 <div>
-                  <h1 className="font-caveat text-[52px] leading-none text-black font-bold">Joan Miguel</h1>
+                  <h1 className="font-caveat text-[36px] md:text-[52px] leading-none text-black font-bold">Joan Miguel</h1>
                   <p className="mt-1">
                     <span className="font-cormorant italic text-[15px] font-bold text-[#C9A85C]">POSITION</span>
                     <span className="font-roboto italic text-[14px] text-gray-600"> / UX/UI Developer</span>
                   </p>
                 </div>
-                <div className="text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light">
+                <div className="text-left md:text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light">
                   <p>Seattle, WA</p>
                   <p>(206) 637-0438</p>
                   <p>joanaberionmiguel@gmail.com</p>
@@ -70,7 +118,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
               </div>
 
               {/* Two-column body */}
-              <div className="flex gap-10">
+              <div className="flex flex-col md:flex-row md:gap-10">
 
                 {/* Left column */}
                 <div className="flex-[3] min-w-0">
@@ -120,7 +168,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                 </div>
 
                 {/* Right column */}
-                <div className="flex-[2] min-w-0">
+                <div className="flex-[2] min-w-0 mt-6 md:mt-0">
 
                   {/* SKILLS */}
                   <h2 className="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3">SKILLS</h2>
