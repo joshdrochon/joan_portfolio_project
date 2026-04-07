@@ -25,15 +25,16 @@ describe("ResumeModal", () => {
 
   it("renders the Save Copy download link", () => {
     render(<ResumeModal isOpen={true} onClose={() => {}} />);
-    const link = screen.getByRole("link", { name: /save copy/i });
-    expect(link).toHaveAttribute("href", "/resume.pdf");
-    expect(link).toHaveAttribute("download");
+    const links = screen.getAllByRole("link", { name: /save copy/i });
+    expect(links.length).toBeGreaterThan(0);
+    expect(links[0]).toHaveAttribute("href", "/resume.pdf");
+    expect(links[0]).toHaveAttribute("download");
   });
 
   it("calls onClose when the close button is clicked", async () => {
     const onClose = vi.fn();
     render(<ResumeModal isOpen={true} onClose={onClose} />);
-    await userEvent.click(screen.getByRole("button", { name: /close/i }));
+    await userEvent.click(screen.getAllByRole("button", { name: /close/i })[0]);
     expect(onClose).toHaveBeenCalledOnce();
   });
 

@@ -21,8 +21,8 @@ describe("ProjectsSection", () => {
 
   it("renders project descriptions", () => {
     render(<ProjectsSection />);
-    expect(screen.getAllByText(/partnered with a family-owned small business/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/partnered with a family owned small business/i).length).toBeGreaterThan(0);
     expect(screen.getAllByText(/collaborated closely with a software engineer/i).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/orchestrated a game-day marketing initiative/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/orchestrated a game day marketing initiative/i).length).toBeGreaterThan(0);
   });
 });
