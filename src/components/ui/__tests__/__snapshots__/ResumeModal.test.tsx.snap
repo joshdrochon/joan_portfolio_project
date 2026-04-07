@@ -7,7 +7,7 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
   </style>
   <div
     aria-modal="true"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-8"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4 md:px-8"
     role="dialog"
   >
     <div
@@ -35,14 +35,14 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
         class="overflow-y-auto px-6 pb-6"
       >
         <div
-          class="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl"
+          class="bg-white rounded-[4px] px-6 py-8 md:px-14 md:py-12 text-black shadow-2xl"
         >
           <div
-            class="flex justify-between items-start mb-8"
+            class="flex flex-col gap-2 md:flex-row md:justify-between md:items-start mb-8"
           >
             <div>
               <h1
-                class="font-caveat text-[52px] leading-none text-black font-bold"
+                class="font-caveat text-[36px] md:text-[52px] leading-none text-black font-bold"
               >
                 Joan Miguel
               </h1>
@@ -62,7 +62,7 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
               </p>
             </div>
             <div
-              class="text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light"
+              class="text-left md:text-right font-merriweather text-[13px] text-gray-600 leading-relaxed font-light"
             >
               <p>
                 Seattle, WA
@@ -76,7 +76,7 @@ exports[`ResumeModal > matches snapshot when open 1`] = `
             </div>
           </div>
           <div
-            class="flex gap-10"
+            class="flex flex-col md:flex-row md:gap-10"
           >
             <div
               class="flex-[3] min-w-0"

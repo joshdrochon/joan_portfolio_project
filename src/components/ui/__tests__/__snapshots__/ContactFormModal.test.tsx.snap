@@ -7,11 +7,11 @@ exports[`ContactFormModal > matches snapshot when open 1`] = `
   </style>
   <div
     aria-modal="true"
-    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-8"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 md:p-8"
     role="dialog"
   >
     <div
-      class="bg-white max-w-lg w-full p-10 relative shadow-2xl rounded-[6px]"
+      class="bg-white max-w-lg w-full p-6 md:p-10 relative shadow-2xl rounded-[6px]"
     >
       <button
         aria-label="Close"
@@ -20,7 +20,7 @@ exports[`ContactFormModal > matches snapshot when open 1`] = `
         ✕
       </button>
       <h2
-        class="font-handwritten text-[56px] tracking-[6px] text-black leading-none mb-8"
+        class="font-handwritten text-[40px] md:text-[56px] tracking-[6px] text-black leading-none mb-8"
       >
         Say Hello
       </h2>
@@ -28,7 +28,7 @@ exports[`ContactFormModal > matches snapshot when open 1`] = `
         class="space-y-4"
       >
         <div
-          class="grid grid-cols-2 gap-4"
+          class="grid grid-cols-1 sm:grid-cols-2 gap-4"
         >
           <div>
             <label
