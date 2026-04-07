@@ -165,14 +165,14 @@ Currently desktop-first. When adding responsive breakpoints use Tailwind's `sm:`
 
 - **Static assets**: `public/` directory — referenced as `/filename` (e.g., `/profile.jpg`, `/resume.pdf`).
 - **All images**: Use `next/image` with explicit `width`/`height` or `fill` prop. Never use `<img>`.
-- **Remote images**: Allowed hosts are configured in `next.config.ts`. Currently only `picsum.photos` is allowed. Add new hostnames there if needed.
+- **Remote images**: Allowed hosts are configured in `next.config.ts`. Currently `images.unsplash.com` is allowed. Add new hostnames there if needed.
 - **Resume download**: Triggered client-side with `<a href="/resume.pdf" download>` or `window.open`.
 
 ```typescript
 // next.config.ts — add remote hosts here
 images: {
   remotePatterns: [
-    { protocol: "https", hostname: "picsum.photos" },
+    { protocol: "https", hostname: "images.unsplash.com" },
   ],
 }
 ```
