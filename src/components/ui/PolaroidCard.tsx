@@ -7,9 +7,10 @@ interface PolaroidCardProps {
   imageUrl: string;
   label: string;
   onClick: () => void;
+  objectPosition?: string;
 }
 
-export default function PolaroidCard({ imageUrl, label, onClick }: PolaroidCardProps) {
+export default function PolaroidCard({ imageUrl, label, onClick, objectPosition }: PolaroidCardProps) {
   return (
     <div
       className={`${styles.card} cursor-pointer select-none`}
@@ -32,6 +33,7 @@ export default function PolaroidCard({ imageUrl, label, onClick }: PolaroidCardP
             alt={label}
             fill
             className="object-cover"
+            style={objectPosition ? { objectPosition } : undefined}
           />
         </div>
 

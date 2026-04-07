@@ -27,22 +27,22 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
         aria-modal="true"
       >
         <div
-          className="bg-[#f2f2f2] rounded-[6px] w-full max-w-[900px] relative flex flex-col"
+          className="bg-white rounded-[6px] w-full max-w-[900px] relative flex flex-col"
           style={{ maxHeight: "calc(100vh - 96px)" }}
           onClick={(e) => e.stopPropagation()}
         >
           {/* Header bar */}
-          <div className="flex items-center justify-end gap-3 px-5 py-4 shrink-0">
+          <div className="flex items-center justify-between px-5 py-4 shrink-0">
             <a
               href="/resume.pdf"
               download="Joan_Miguel_Resume.pdf"
-              className="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+              className="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
             >
-              Take One
+              Save Copy
             </a>
             <button
               onClick={onClose}
-              className="text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+              className="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors"
               aria-label="Close"
             >
               ✕
@@ -51,7 +51,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
 
           {/* Resume document */}
           <div className="overflow-y-auto px-6 pb-6">
-            <div className="bg-white rounded-[4px] px-14 py-12 text-black">
+            <div className="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl">
 
               {/* Header */}
               <div className="flex justify-between items-start mb-8">

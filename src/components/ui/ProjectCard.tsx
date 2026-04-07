@@ -7,13 +7,13 @@ import { truncate } from "@/utils/text";
 
 interface ProjectCardProps {
   id: number;
-  seed: string;
+  imageUrl: string;
   title: string;
   tags: string[];
   desc: string;
 }
 
-export default function ProjectCard({ seed, title, tags, desc }: ProjectCardProps) {
+export default function ProjectCard({ imageUrl, title, tags, desc }: ProjectCardProps) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -21,7 +21,7 @@ export default function ProjectCard({ seed, title, tags, desc }: ProjectCardProp
       <div className="group bg-white border border-gray-200 overflow-hidden rounded-[6px]">
         <div className="relative w-full overflow-hidden" style={{ height: 260 }}>
           <Image
-            src={`https://picsum.photos/seed/${seed}/600/400`}
+            src={imageUrl}
             alt={title}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -41,7 +41,7 @@ export default function ProjectCard({ seed, title, tags, desc }: ProjectCardProp
           <h3 className="font-handwritten text-[28px] tracking-[3px] text-black mb-2 leading-none">
             {title}
           </h3>
-          <p className="text-sm font-mono text-gray-400 mb-4">{truncate(desc, 15)}</p>
+          <p className="text-sm font-sans text-gray-400 mb-4">{truncate(desc, 15)}</p>
           <div className="flex justify-start">
             <button
               onClick={() => setModalOpen(true)}

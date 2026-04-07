@@ -46,7 +46,7 @@ export default function CardsSection() {
               <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
               <a href="#projects">
                 <PolaroidCard
-                  imageUrl="https://picsum.photos/seed/projectscard/400/350"
+                  imageUrl="https://images.unsplash.com/photo-1578521312762-9180d243f976?w=400&h=350&fit=crop"
                   label="Projects"
                   onClick={() => {}}
                 />
@@ -57,9 +57,10 @@ export default function CardsSection() {
             <div className="flex flex-col items-center">
               <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
               <PolaroidCard
-                imageUrl="https://picsum.photos/seed/nature42/400/350"
+                imageUrl="/joanaboutme.jpeg"
                 label="About Me"
                 onClick={() => setAboutMeOpen(true)}
+                objectPosition="center calc(20% - 25px)"
               />
             </div>
 
@@ -114,7 +115,7 @@ export default function CardsSection() {
             <div className="flex flex-col items-center">
               <div className="relative z-20 mb-[-18px]"><ClothespinSVG /></div>
               <PolaroidCard
-                imageUrl="https://picsum.photos/seed/colorful99/400/350"
+                imageUrl="https://images.unsplash.com/photo-1531913223931-b0d3198229ee?w=400&h=350&fit=crop"
                 label="Resume"
                 onClick={() => setResumeOpen(true)}
               />

@@ -153,7 +153,7 @@ export default function ContactFormModal({ isOpen, onClose }: ContactFormModalPr
 
             {formState === "error" && (
               <p className="text-red-400 text-xs font-mono tracking-wide">
-                Something went wrong. Please try again or email directly at joshdrochon@gmail.com
+                Something went wrong. Please try again or email directly at joanaberionmiguel@gmail.com
               </p>
             )}
 

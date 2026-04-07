@@ -36,7 +36,7 @@ export default function ProjectModal({ isOpen, onClose, title, desc, tags }: Pro
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+          className="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
           aria-label="Close"
         >
           ✕

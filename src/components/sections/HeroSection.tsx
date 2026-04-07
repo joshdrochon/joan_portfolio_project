@@ -17,7 +17,7 @@ export default function HeroSection() {
         />
       </div>
 
-      <p className="font-mono text-[20px] tracking-[4px] text-black text-center mt-6 mb-4">
+      <p className="font-handwritten text-[32px] tracking-[4px] text-black text-center mt-6 mb-4">
         Joan Miguel
       </p>
     </section>
