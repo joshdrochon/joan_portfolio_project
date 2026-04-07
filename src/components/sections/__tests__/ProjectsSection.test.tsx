@@ -15,7 +15,7 @@ describe("ProjectsSection", () => {
   it("renders all 3 project cards", () => {
     render(<ProjectsSection />);
     expect(screen.getAllByText("Lawnboy Website Revamp").length).toBeGreaterThan(0);
-    expect(screen.getAllByText("Customer UX/UI Portfolio Wesbite").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Custom UX/UI Portfolio Wesbite").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Buffalo Wild Wings Mobile App Feature").length).toBeGreaterThan(0);
   });
 

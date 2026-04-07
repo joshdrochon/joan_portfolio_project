@@ -21,7 +21,7 @@ describe("AboutMeModal", () => {
   it("renders greeting and subtitle", () => {
     render(<AboutMeModal isOpen={true} onClose={() => {}} />);
     expect(screen.getByText(/hi, i'm joan miguel/i)).toBeInTheDocument();
-    expect(screen.getByText(/ux designer \| asu alum/i)).toBeInTheDocument();
+    expect(screen.getByText(/ux designer/i)).toBeInTheDocument();
   });
 
   it("renders all bio sections", () => {

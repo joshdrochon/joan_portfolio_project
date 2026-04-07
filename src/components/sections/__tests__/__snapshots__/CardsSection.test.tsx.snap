@@ -67,7 +67,7 @@ exports[`CardsSection > matches snapshot 1`] = `
                 >
                   <img
                     alt="Projects"
-                    src="https://picsum.photos/seed/projectscard/400/350"
+                    src="https://images.unsplash.com/photo-1578521312762-9180d243f976?w=400&h=350&fit=crop"
                   />
                 </div>
                 <p
@@ -128,7 +128,7 @@ exports[`CardsSection > matches snapshot 1`] = `
               >
                 <img
                   alt="About Me"
-                  src="https://picsum.photos/seed/nature42/400/350"
+                  src="/joanaboutme.jpeg"
                 />
               </div>
               <p
@@ -257,7 +257,7 @@ exports[`CardsSection > matches snapshot 1`] = `
               >
                 <img
                   alt="Resume"
-                  src="https://picsum.photos/seed/colorful99/400/350"
+                  src="https://images.unsplash.com/photo-1531913223931-b0d3198229ee?w=400&h=350&fit=crop"
                 />
               </div>
               <p
@@ -283,15 +283,15 @@ exports[`CardsSection > matches snapshot 1`] = `
     >
       <button
         aria-label="Close"
-        class="absolute top-4 right-5 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
+        class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors z-10"
       >
         ✕
       </button>
       <div
-        class="pt-[47px] flex justify-center"
+        class="pt-[47px] px-[56px]"
       >
         <div
-          class="relative w-[584px] h-[328px] rounded-[4px] overflow-hidden"
+          class="relative w-full h-[328px] rounded-[4px] overflow-hidden"
         >
           <img
             alt="About Joan"
@@ -300,20 +300,44 @@ exports[`CardsSection > matches snapshot 1`] = `
         </div>
       </div>
       <div
-        class="px-[56px] pt-6 pb-6"
+        class="px-[56px] pt-6 pb-10"
       >
         <p
-          class="font-mono text-[16px] tracking-[4px] text-black text-center"
+          class="font-handwritten text-[24px] tracking-[3px] text-black text-center leading-none"
         >
           Hi, I'm Joan Miguel. 👋
         </p>
-        <p
-          class="font-mono font-semibold text-[16px] tracking-[3.2px] text-black text-center mt-4"
+        <div
+          class="flex justify-between mt-4"
         >
-          UX Designer | ASU Alum | Experience Enthusiast
-        </p>
+          <span
+            class="font-mono font-semibold text-[16px] tracking-[3.2px] text-black"
+          >
+            UX Designer
+          </span>
+          <span
+            class="font-mono text-[16px] text-black"
+          >
+            |
+          </span>
+          <span
+            class="font-mono font-semibold text-[16px] tracking-[3.2px] text-black"
+          >
+            ASU Alum
+          </span>
+          <span
+            class="font-mono text-[16px] text-black"
+          >
+            |
+          </span>
+          <span
+            class="font-mono font-semibold text-[16px] tracking-[3.2px] text-black"
+          >
+            Experience Enthusiast
+          </span>
+        </div>
         <p
-          class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-5 leading-[1.4]"
+          class="font-sans text-[16px] text-gray-700 leading-relaxed mt-5"
         >
           My UX journey started at Arizona State University, an opportunity I earned through the Starbucks College Achievement Plan. Balancing a fast-paced barista role while earning my degree taught me the ultimate UX lesson: how to deliver a seamless, "addictive" experience even during a morning rush.
         </p>
@@ -323,15 +347,10 @@ exports[`CardsSection > matches snapshot 1`] = `
           <p
             class="font-mono font-bold text-[16px] tracking-[3.2px] text-black"
           >
-            🎨 
-            <span
-              class="font-bold"
-            >
-              Why I Design
-            </span>
+            Why I Design
           </p>
           <p
-            class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-1 leading-[1.4]"
+            class="font-sans text-[16px] text-gray-700 leading-relaxed mt-1"
           >
             I'm obsessed with the "sticky" factor and creating apps that are so fun and intuitive they become a natural part of a user's day. I love exploring gamification and high-engagement flows that turn a simple task into a delightful moment.
           </p>
@@ -342,15 +361,10 @@ exports[`CardsSection > matches snapshot 1`] = `
           <p
             class="font-mono font-bold text-[16px] tracking-[3.2px] text-black"
           >
-            🏔️ 
-            <span
-              class="font-bold"
-            >
-              Life Outside the Pixels
-            </span>
+            Life Outside the Pixels
           </p>
           <p
-            class="font-sans text-[14px] tracking-[2.8px] text-black text-justify mt-1 leading-[1.4]"
+            class="font-sans text-[16px] text-gray-700 leading-relaxed mt-1"
           >
             When I'm not in Figma, you'll find me at Stoke Mountain, the first indoor ski and snowboard park in Washington. Working there keeps me connected to the outdoors and the local community of riders.
           </p>
@@ -365,22 +379,22 @@ exports[`CardsSection > matches snapshot 1`] = `
     style="display: none;"
   >
     <div
-      class="bg-[#f2f2f2] rounded-[6px] w-full max-w-[900px] relative flex flex-col"
+      class="bg-white rounded-[6px] w-full max-w-[900px] relative flex flex-col"
       style="max-height: calc(100vh - 96px);"
     >
       <div
-        class="flex items-center justify-end gap-3 px-5 py-4 shrink-0"
+        class="flex items-center justify-between px-5 py-4 shrink-0"
       >
         <a
-          class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:border-gray-700 hover:text-gray-900 transition-colors duration-200"
+          class="text-xs font-mono tracking-widest text-gray-600 border border-gray-400 rounded-full px-3 py-1 hover:bg-black hover:border-black hover:text-white transition-colors duration-200"
           download="Joan_Miguel_Resume.pdf"
           href="/resume.pdf"
         >
-          Take One
+          Save Copy
         </a>
         <button
           aria-label="Close"
-          class="text-gray-400 hover:text-black text-2xl leading-none transition-colors"
+          class="absolute top-5 right-6 text-gray-400 hover:text-black text-2xl leading-none transition-colors"
         >
           ✕
         </button>
@@ -389,7 +403,7 @@ exports[`CardsSection > matches snapshot 1`] = `
         class="overflow-y-auto px-6 pb-6"
       >
         <div
-          class="bg-white rounded-[4px] px-14 py-12 text-black"
+          class="bg-white rounded-[4px] px-14 py-12 text-black shadow-2xl"
         >
           <div
             class="flex justify-between items-start mb-8"
