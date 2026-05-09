@@ -146,7 +146,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                   {/* WORK */}
                   <h2 className="font-cormorant italic font-bold text-[18px] text-[#C9A85C] tracking-wider mb-3">WORK</h2>
 
-                  <p className="font-mono italic text-[13px] mb-2">Stoke Mountain (WA) — Lead Barista (current)</p>
+                  <p className="font-mono italic text-[13px] mb-2">Stoke Mountain (WA) — Cafe Operations Lead (current)</p>
                   <div className="pl-6 space-y-2 mb-4">
                     <p className="font-mono text-[12px] leading-relaxed">
                       <span className="font-bold">Operations Lead</span> | Solely responsible for all opening/closing procedures, inventory management, and guest experience during peak operational hours
@@ -156,7 +156,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                     </p>
                   </div>
 
-                  <p className="font-mono italic text-[13px] mb-2">Starbucks (WI, WA) — Barista (2017-2022)</p>
+                  <p className="font-mono italic text-[13px] mb-2">Starbucks (WI, WA) — Senior Barista (2017-2022)</p>
                   <div className="pl-6 space-y-2">
                     <p className="font-mono text-[12px] leading-relaxed">
                       <span className="font-bold">Workflow</span> | Managed high-volume orders and drink production in fast-paced environments while maintaining high service standards
